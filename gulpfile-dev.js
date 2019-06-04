@@ -35,6 +35,7 @@ function copyIcon() {
 function server() {
     return src('./')
         .pipe(webserver({
+            host: 'localhost',
             port: 8000,
             directoryListing: true,
             livereload: true,
@@ -43,7 +44,13 @@ function server() {
                     target: 'http://i360mall.com',
                     changeOrigin: true,         //访问不同的域名  设置为true
                     pathRewrite: {
-                        '^/api': ""
+                        '^/api': ''
+                    }
+                }),
+                proxy('/json', {
+                    target: 'http://localhost:9000',
+                    pathRewrite: {
+                        '^/json': ''
                     }
                 })
             ]
