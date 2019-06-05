@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {\n  try {\n    var info = gen[key](arg);\n    var value = info.value;\n  } catch (error) {\n    reject(error);\n    return;\n  }\n\n  if (info.done) {\n    resolve(value);\n  } else {\n    Promise.resolve(value).then(_next, _throw);\n  }\n}\n\nfunction _asyncToGenerator(fn) {\n  return function () {\n    var self = this,\n        args = arguments;\n    return new Promise(function (resolve, reject) {\n      var gen = fn.apply(self, args);\n\n      function _next(value) {\n        asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n      }\n\n      function _throw(err) {\n        asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n      }\n\n      _next(undefined);\n    });\n  };\n}\n\nmodule.exports = _asyncToGenerator;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/asyncToGenerator.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
@@ -127,40 +116,29 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//common.js规范\nvar Name = __webpack_require__(/*! ./controllers/Name */ \"./src/controllers/Name.js\"); //引入js\n\n\nvar aaTpl = __webpack_require__(/*! ./views/aa.art */ \"./src/views/aa.art\");\n\nvar _require = __webpack_require__(/*! ./controllers/position */ \"./src/controllers/position.js\"),\n    list = _require.list; //ES6\n// import { name } from './controllers/name'\n\n\nlist();\n\nfunction getName() {\n  return _getName.apply(this, arguments);\n}\n\nfunction _getName() {\n  _getName = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var name;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            console.log(Name.name);\n            _context.next = 3;\n            return Name.getName();\n\n          case 3:\n            name = _context.sent;\n            console.log(name);\n            console.log(name);\n\n          case 6:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n  return _getName.apply(this, arguments);\n}\n\ngetName();\nvar str = template.render(aaTpl, {\n  title: 'fffffff'\n});\nconsole.log(str);\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nvar ajaxRender = __webpack_require__(/*! ./models/ajax */ \"./src/models/ajax.js\");\n\nvar indexTpl = __webpack_require__(/*! ./views/index.html */ \"./src/views/index.html\");\n\nvar renderList =\n/*#__PURE__*/\nfunction () {\n  var _ref = _asyncToGenerator(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var indexData, renderedInderTpl, bannerTap;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return ajaxRender.get('/api/h5/index?_=1559658153442');\n\n          case 2:\n            indexData = _context.sent;\n            console.log(indexData.data.loop.data[0].pic);\n            renderedInderTpl = template.render(indexTpl, {\n              indexData: indexData\n            });\n            $('#page').html(renderedInderTpl); //banner轮播图\n\n            bannerTap = new Swiper('.swiper-container', {\n              autoplay: true,\n              //可选选项，自动滑动\n              loop: true,\n              pagination: {\n                el: '.swiper-pagination'\n              }\n            });\n\n          case 7:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function renderList() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nrenderList();\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
-/***/ "./src/controllers/Name.js":
-/*!*********************************!*\
-  !*** ./src/controllers/Name.js ***!
-  \*********************************/
+/***/ "./src/models/ajax.js":
+/*!****************************!*\
+  !*** ./src/models/ajax.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//common.js规范\n// module.exports = 'songqiang'\n//ES6\n// export const name = 'songqiang'\nmodule.exports = {\n  name: \"hahahah\",\n  getName: function getName() {\n    return new Promise(function (resolve, reject) {\n      setTimeout(function () {\n        resolve('lalala');\n      }, 2000);\n    });\n  }\n};\n\n//# sourceURL=webpack:///./src/controllers/Name.js?");
+eval("module.exports = {\n  get: function get(url) {\n    return $.ajax({\n      url: url,\n      type: 'get',\n      dataType: 'json',\n      success: function success(result) {\n        return result;\n      }\n    });\n  }\n};\n\n//# sourceURL=webpack:///./src/models/ajax.js?");
 
 /***/ }),
 
-/***/ "./src/controllers/position.js":
-/*!*************************************!*\
-  !*** ./src/controllers/position.js ***!
-  \*************************************/
+/***/ "./src/views/index.html":
+/*!******************************!*\
+  !*** ./src/views/index.html ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = {\n  list: function list() {\n    $.ajax({\n      url: \"/api/h5/index?_=1559560458264\",\n      success: function success(data) {\n        console.log(data);\n      }\n    });\n  }\n};\n\n//# sourceURL=webpack:///./src/controllers/position.js?");
-
-/***/ }),
-
-/***/ "./src/views/aa.art":
-/*!**************************!*\
-  !*** ./src/views/aa.art ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"<div>{{title}}</div>\"\n\n//# sourceURL=webpack:///./src/views/aa.art?");
+eval("module.exports = \"<div class=\\\"container\\\">    <header>        <div class=\\\"log\\\">            <img src=\\\"https://p.ssl.qhimg.com/t01f4ae47000adcadee.png\\\" alt=\\\"\\\">        </div>        <a href=\\\"\\\" class=\\\"search\\\">            <span class=\\\"iconfont icon-fenxiang\\\"></span>            搜索商品        </a>        <div class=\\\"login\\\"><a href=\\\"\\\">登录</a></div>    </header>    <main>        <div class=\\\"banner\\\">            <div class=\\\"swiper-container\\\">                <div class=\\\"swiper-wrapper\\\">                    {{each indexData.data.loop.data}}                        <div class=\\\"swiper-slide\\\"><img src=\\\"{{$value.pic}}\\\" alt=\\\"\\\"></div>                    {{/each}}                </div>                <div class=\\\"swiper-pagination\\\"></div>            </div>        </div>    </main>    <footer></footer></div> \"\n\n//# sourceURL=webpack:///./src/views/index.html?");
 
 /***/ })
 

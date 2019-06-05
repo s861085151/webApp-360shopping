@@ -1,5 +1,7 @@
-$color: blue;
-
-body {
-    background: $color;
+@import './yo/usage/core/reset.scss';
+@import './modules/common/swiper.min.css';
+html {
+    font-size: 32vw;
+    background: #ffffff;
 }
+@import './modules/index/index.scss';

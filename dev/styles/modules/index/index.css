@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1559654457703");
+  /* IE9 */
+  src: url("iconfont.eot?t=1559654457703#iefix") format("embedded-opentype"), url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAK4AAsAAAAABmQAAAJtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcApsgQwBNgIkAwgLBgAEIAWEbQcyG7QFyK6wKcO9SGBx8t6ORofwbbHBBwHi4b/9aPfNzKomEcc8ueRNhKaSoFGX0PYQCqHQ8FBEG/nf/1qbEy1pXj+PLkn7yvwVn50T6JSqoZASjQqhkQgDab0AFjkJdHAHi6xSCpDa3x5fdpsMuKZ+Aj1IHtC7xDqsg4qSAnA8oAF24WhkG8nIN4xd4BIeE2g0oCZzZLk/QVlhrQrEDcfSoJxLKQqr1gu1NQeLeKlGfXqe3okX4ffjt1YCSU1mbTy9sTBh/E3f5HvVPV33CWkCPF6DjDmgEOdrSyflBONyGkt5I2BfjcE3VeWHxF79gv11Vn0z6IOGezK6pltdlkBB7jO8c9S15NLcfLN/Hj3//Hm4kFyyr6Sqb7sIN8Oyr//+H89u5k9kz/oa2Tap9yOxClXc8qr0aGvrUbZVmE2P0sP0dxwAqN7nN3lBBsGFo59frD3/UcDXvnaGS6r3RV4A6vccCn/I2HOg6GYrmIpqrK0lfXJnbmvUiAqOdfob6+m5nVqo13NTkTr9KbJ6Y2Rh51CjyRpq1duPRrNWx5t0YTlRGjDjBSC0+0LS6i2ydt9kYX9Ro9c/arVHaHQxui5sMhFXDzNpQibqT+gYUaicsFSjxgNZV1/jrDnkL8Spk8V2b7G6opB4ji3pzeqIKFQcBbgEz5HvRxhz5JIhDVsk7jbn6t7UMKIAqg5jRCOICemeIIchElL+eFEtff6AWK58Gm7pqykvCEs506O2hlYPcuUIe/XdyyupG0uHEApSWCSAlmAe8fkiKK6f5yIG0WCPKMS6mvYo1dfRWN8VfN0JaGR5U9izs/oNCh+OFloA") format("woff2"), url("iconfont.woff?t=1559654457703") format("woff"), url("iconfont.ttf?t=1559654457703") format("truetype"), url("iconfont.svg?t=1559654457703#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fenxiang:before {
+  content: "\e600"; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+  .container header {
+    height: .354167rem;
+    padding: 0 .03125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .125rem; }
+    .container header .log {
+      width: .479167rem;
+      height: .291667rem; }
+      .container header .log img {
+        width: 100%;
+        height: 100%; }
+    .container header .search {
+      display: block;
+      width: 2.166667rem;
+      height: .291667rem;
+      background: #eeeeee;
+      padding: 0 .291667rem;
+      line-height: .291667rem;
+      color: #cccccc;
+      border-radius: .033333rem;
+      position: relative; }
+      .container header .search span {
+        position: absolute;
+        left: .041667rem;
+        font-size: .183333rem;
+        color: #B7B7B7; }
+    .container header .login {
+      width: .333333rem;
+      height: .291667rem;
+      text-align: center;
+      line-height: .291667rem; }
+      .container header .login a {
+        color: #333333; }
+  .container main {
+    flex: 1; }
+    .container main .banner {
+      width: 100%;
+      height: 1.333333rem; }
+      .container main .banner img {
+        width: 100%; }

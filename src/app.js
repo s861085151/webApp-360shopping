@@ -1,20 +1,22 @@
-//common.js规范
-const Name = require('./controllers/Name')     //引入js
-const aaTpl = require('./views/aa.art')
-const { list } = require('./controllers/position')
 
-//ES6
-// import { name } from './controllers/name'
 
-list()
 
-async function getName() {
-    console.log(Name.name)
-    const name = await Name.getName()
-    console.log(name)
-    console.log(name)
+const ajaxRender = require('./models/ajax')
+const indexTpl = require('./views/index.html')
+const renderList = async() => {
+    const indexData = await ajaxRender.get('/api/h5/index?_=1559658153442')
+    console.log(indexData.data.loop.data[0].pic)
+    const renderedInderTpl = template.render(indexTpl, {indexData})
+    $('#page').html(renderedInderTpl);
+
+
+    //banner轮播图
+    let bannerTap = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination'
+        }
+    })
 }
-getName()
-
-const str = template.render(aaTpl, {title: 'fffffff'})
-console.log(str)
+renderList()

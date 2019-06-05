@@ -1,0 +1,60 @@
+@import '../common/iconfont.scss';
+.container {
+    display: flex;
+    flex-direction: column;
+    header {
+        height: .354167rem;
+        padding: 0 .03125rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .125rem;
+        .log {
+            width: .479167rem;
+            height: .291667rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .search {
+            display: block;
+            width: 2.166667rem;
+            height: .291667rem;
+            background: rgb(238, 238, 238);
+            padding: 0 .291667rem;
+            line-height: .291667rem;
+            color: rgb(204, 204, 204);
+            border-radius: .033333rem;
+            position: relative;
+            span {
+                position: absolute;
+                left: .041667rem;
+                font-size: .183333rem;
+                color: #B7B7B7;
+            }
+        }
+        .login {
+            width: .333333rem;
+            height: .291667rem;
+            text-align: center;
+            line-height: .291667rem;
+            a {
+                color: rgb(51, 51, 51);
+            }
+        }
+    }
+    main {
+        flex: 1;
+        .banner {
+            width: 100%;
+            height: 1.333333rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    footer {
+
+    }
+}

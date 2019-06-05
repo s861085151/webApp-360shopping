@@ -59,7 +59,7 @@ function packJS() {
                         }
                     },
                     {
-                        test: /\.art$/,
+                        test: /\.html$/,
                         loader: 'string-loader'
                     }
                 ]
@@ -79,7 +79,7 @@ function revColl() {
 
 //编译CSS
 function packCSS() {
-    return src('./src/styles/app.scss')
+    return src('./src/styles/**/*.scss')
         .pipe(gulpSass().on('error', gulpSass.logError))
         .pipe(rev())
         .pipe(dest('./dist/styles'))

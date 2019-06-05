@@ -72,12 +72,14 @@ function packJS() {
                             loader: 'babel-loader',
                             options: {
                                 presets: ['@babel/preset-env'],
-                                plugins: ['@babel/plugin-transform-runtime']
+                                plugins: [['@babel/plugin-transform-runtime', {
+                                    'helpers': false
+                                }]]
                             }
                         }
                     },
                     {
-                        test: /\.art$/,
+                        test: /\.html$/,
                         loader: 'string-loader'
                     }
                 ]
@@ -89,7 +91,7 @@ function packJS() {
 
 //编译CSS
 function packCSS() {
-    return src('./src/styles/app.scss')
+    return src(['./src/styles/**/*.scss','!./src/styles/yo/**/*'])
         .pipe(gulpSass().on('error', gulpSass.logError))
         .pipe(dest('./dev/styles'))
 }

@@ -1,0 +1,25 @@
+<div class="container">
+    <header>
+        <div class="log">
+            <img src="https://p.ssl.qhimg.com/t01f4ae47000adcadee.png" alt="">
+        </div>
+        <a href="" class="search">
+            <span class="iconfont icon-fenxiang"></span>
+            搜索商品
+        </a>
+        <div class="login"><a href="">登录</a></div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {{each indexData.data.loop.data}}
+                        <div class="swiper-slide"><img src="{{$value.pic}}" alt=""></div>
+                    {{/each}}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</div> 
