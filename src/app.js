@@ -12,7 +12,7 @@ const renderList = async() => {
     
     
     //banner轮播图
-    let bannerTap = new Swiper('.swiper-container', {
+    let bannerTap = new Swiper('.bannerTap', {
         autoplay: true,//可选选项，自动滑动
         loop: true,
         pagination: {
@@ -21,15 +21,38 @@ const renderList = async() => {
     })
     
     //商城快报轮播
+    let newsTap = new Swiper('.toutiao', {
+        direction : 'vertical',
+        autoplay: true,//可选选项，自动滑动
+        loop: true,
+    })
+
     //better-scroll 实例化
-    new BScroll('main')
-
+    let bScroll = new BScroll('main', {
+        probeType: 1
+    })
+    console.log($('main .content').height())
     //首页-更多商品模板
-    const moreList = await ajaxRender.get('/moreApi/search/latest?q=*&size=20&page=0')
-    const renderedIndexMoreTpl = template.render(indexMoreTpl, {moreList})
-    $('#page main .content').append(renderedIndexMoreTpl);
+    let currentPage = 0
+    bScroll.on('scroll', async function() {
+        if(this.maxScrollY-this.y >= 0 && currentPage < 4) {
+            $('.moreGoods').show();
+            const moreList = await ajaxRender.get(`/moreApi/search/latest?q=*&size=20&page=${currentPage}`)
+            const renderedIndexMoreTpl = template.render(indexMoreTpl, {moreList})
+            $('#page main .content .moreGoods .goodList').append(renderedIndexMoreTpl);
+            console.log($('#page main .content .moreGoods .goodList'))
+            this.refresh()
+            ++currentPage
+            if(currentPage == 4) {
+                $('.helpContents').show()
+            }
+        }
+    })
 
-
+    //悬浮小图标
+    // const floatPicData = await ajaxRender.get('/floatPic/h5/getMallIcon')
+    // const aaa = template.render(indexTpl, {floatPicData})
+    // $('#page').append(renderedfloatPicDataTpl);
 
 }
 renderList()

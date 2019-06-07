@@ -13,7 +13,7 @@
         <div class="content">
             <!-- 轮播图 -->
             <div class="banner">
-                <div class="swiper-container">
+                <div class="swiper-container bannerTap">
                     <div class="swiper-wrapper">
                         {{each indexData.data.loop.data}}
                         <div class="swiper-slide"><img src="{{$value.pic}}" alt=""></div>
@@ -25,10 +25,10 @@
             <!-- 商城快报 -->
             <div class="shoppingNews">
                 <h2 class="title">商城快报</h2>
-                <div class="toutiao">
-                    <div class="scrollText">
+                <div class="toutiao swiper-container">
+                    <div class="scrollText swiper-wrapper">
                         {{each indexData.data.toutiao.data}}
-                        <a href="{{$value.url}}">
+                        <a href="{{$value.url}}" class="swiper-slide">
                             <em>{{$value.tag}}</em>
                             <i>{{$value.msg}}</i>
                         </a>
@@ -166,7 +166,68 @@
                     {{/each}}
                 </ul>
             </div>
+            <!-- 更多商品 -->
+            <div class="moreGoods">
+                <h4 class="title">
+                    更多商品
+                </h4>
+                <ul class="goodList">
+                </ul>
+            </div>
+            <!-- 底部 -->
+            <div class="helpContents">
+                <div class="help_top">
+                    <div class="item">
+                        <span class="circle">7</span>
+                        <span class="text">7天无理由退货</span>
+                    </div>
+                    <div class="item">
+                        <span class="circle">15</span>
+                        <span class="text">15天免费换货</span>
+                    </div>
+                    <div class="item">
+                        <span class="circle">包</span>
+                        <span class="text">满99元包邮</span>
+                    </div>
+                </div>
+                <div class="help_bottom">
+                    <p class="service">客服热线：400-1555-360 周一到周日 9:00-21:00</p>
+
+                    <p class="copyRight">360会员商城©2019 版权所有</p>
+                </div>
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <ul>
+            <li class="item">
+                <a href="">
+                    <span class="iconfont icon-home2 active"></span>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <span class="iconfont icon-liebiao"></span>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <span class="iconfont icon-31gouwuchexuanzhong"></span>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <span class="iconfont icon-wodexuanzhong"></span>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
 </div>

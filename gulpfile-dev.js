@@ -50,6 +50,14 @@ function server() {
                     pathRewrite: {
                         '^/moreApi': ''
                     }
+                }),
+                //悬浮PIC
+                proxy('/floatPic', {
+                    target: 'https://mall.360.cn',
+                    changeOrigin: true, // 访问不同的域名，需要配置成 true
+                    pathRewrite: {
+                        '^/floatPic': ''
+                    }
                 })
             ]
         }))
