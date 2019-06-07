@@ -79,7 +79,7 @@ function revColl() {
 
 //编译CSS
 function packCSS() {
-    return src('./src/styles/**/*.scss')
+    return src(['./src/styles/**/*.scss','!./src/styles/yo/**/*'])
         .pipe(gulpSass().on('error', gulpSass.logError))
         .pipe(rev())
         .pipe(dest('./dist/styles'))

@@ -39,11 +39,16 @@ function server() {
             directoryListing: true,
             livereload: true,
             middleware: [
-                proxy('/api', {
-                    target: 'http://i360mall.com',
-                    changeOrigin: true,         //访问不同的域名  设置为true
+                //首页数据
+                proxy('/indexApi', {
+                    target: 'http://localhost:9000',
+                }),
+                //首页更多商品数据
+                proxy('/moreApi', {
+                    target: 'http://search.mall.360.cn',
+                    changeOrigin: true, // 访问不同的域名，需要配置成 true
                     pathRewrite: {
-                        '^/api': ""
+                        '^/moreApi': ''
                     }
                 })
             ]

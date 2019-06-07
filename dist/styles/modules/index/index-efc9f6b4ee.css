@@ -56,7 +56,7 @@
         color: #333333; }
   .container main {
     flex: 1;
-    overflow-y: auto; }
+    overflow-y: scroll; }
     .container main .banner {
       width: 100%;
       height: 1.333333rem; }
@@ -116,9 +116,9 @@
               margin: auto; }
             .container main .quickEnter .enterList li a p {
               margin-top: .052083rem; }
-    .container main .newGoods, .container main .starItem, .container main .daily, .container main .bargain, .container main .forum, .container main .moreGoods {
+    .container main .newGoods, .container main .starItem, .container main .daily, .container main .bargain {
       text-align: center; }
-      .container main .newGoods .title, .container main .starItem .title, .container main .daily .title, .container main .bargain .title, .container main .forum .title, .container main .moreGoods .title {
+      .container main .newGoods .title, .container main .starItem .title, .container main .daily .title, .container main .bargain .title {
         display: inline-block;
         font-weight: normal;
         font-size: .145833rem;
@@ -128,21 +128,21 @@
         background: url(../images/tit_red.png) no-repeat center;
         background-size: 100% .145833rem;
         position: relative; }
-        .container main .newGoods .title span, .container main .starItem .title span, .container main .daily .title span, .container main .bargain .title span, .container main .forum .title span, .container main .moreGoods .title span {
+        .container main .newGoods .title span, .container main .starItem .title span, .container main .daily .title span, .container main .bargain .title span {
           position: absolute;
           width: .15625rem;
           height: .125rem;
           top: -0.15rem;
           left: .416667rem; }
-          .container main .newGoods .title span img, .container main .starItem .title span img, .container main .daily .title span img, .container main .bargain .title span img, .container main .forum .title span img, .container main .moreGoods .title span img {
+          .container main .newGoods .title span img, .container main .starItem .title span img, .container main .daily .title span img, .container main .bargain .title span img {
             width: 100%; }
-      .container main .newGoods .newPic, .container main .starItem .newPic, .container main .daily .newPic, .container main .bargain .newPic, .container main .forum .newPic, .container main .moreGoods .newPic {
+      .container main .newGoods .newPic, .container main .starItem .newPic, .container main .daily .newPic, .container main .bargain .newPic {
         display: flex;
         padding-bottom: .083333rem; }
-        .container main .newGoods .newPic a, .container main .starItem .newPic a, .container main .daily .newPic a, .container main .bargain .newPic a, .container main .forum .newPic a, .container main .moreGoods .newPic a {
+        .container main .newGoods .newPic a, .container main .starItem .newPic a, .container main .daily .newPic a, .container main .bargain .newPic a {
           display: block;
           flex: 1; }
-          .container main .newGoods .newPic a img, .container main .starItem .newPic a img, .container main .daily .newPic a img, .container main .bargain .newPic a img, .container main .forum .newPic a img, .container main .moreGoods .newPic a img {
+          .container main .newGoods .newPic a img, .container main .starItem .newPic a img, .container main .daily .newPic a img, .container main .bargain .newPic a img {
             width: 100%; }
     .container main .videoBox .video-container {
       height: 1.758333rem;
@@ -194,20 +194,20 @@
             height: 100%; }
         .container main .starItem .starShop .starShop-right a:nth-child(2) {
           margin-top: .04rem; }
-    .container main .daily .itemBox, .container main .bargain .itemBox, .container main .forum .itemBox, .container main .moreGoods .itemBox {
+    .container main .daily .itemBox, .container main .bargain .itemBox {
       display: flex;
       flex-wrap: wrap; }
-      .container main .daily .itemBox .item-goods, .container main .bargain .itemBox .item-goods, .container main .forum .itemBox .item-goods, .container main .moreGoods .itemBox .item-goods {
+      .container main .daily .itemBox .item-goods, .container main .bargain .itemBox .item-goods {
         width: 33.3333%;
         padding: .041667rem;
         text-align: center; }
-        .container main .daily .itemBox .item-goods a, .container main .bargain .itemBox .item-goods a, .container main .forum .itemBox .item-goods a, .container main .moreGoods .itemBox .item-goods a {
+        .container main .daily .itemBox .item-goods a, .container main .bargain .itemBox .item-goods a {
           display: block;
           border: 1px solid #d2d2d2;
           padding-bottom: .083333rem; }
-          .container main .daily .itemBox .item-goods a img, .container main .bargain .itemBox .item-goods a img, .container main .forum .itemBox .item-goods a img, .container main .moreGoods .itemBox .item-goods a img {
+          .container main .daily .itemBox .item-goods a img, .container main .bargain .itemBox .item-goods a img {
             width: 100%; }
-          .container main .daily .itemBox .item-goods a p, .container main .bargain .itemBox .item-goods a p, .container main .forum .itemBox .item-goods a p, .container main .moreGoods .itemBox .item-goods a p {
+          .container main .daily .itemBox .item-goods a p, .container main .bargain .itemBox .item-goods a p {
             color: #333;
             font-size: .114583rem;
             margin-top: .083333rem;
@@ -215,30 +215,30 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
-    .container main .tuijian, .container main .forum, .container main .moreGoods {
+    .container main .tuijian {
       padding-top: .104167rem; }
-      .container main .tuijian .banner, .container main .forum .banner, .container main .moreGoods .banner {
+      .container main .tuijian .banner {
         width: 100%; }
-      .container main .tuijian .goodList, .container main .forum .goodList, .container main .moreGoods .goodList {
+      .container main .tuijian .goodList {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 0 .041667rem; }
-        .container main .tuijian .goodList .goodItem, .container main .forum .goodList .goodItem, .container main .moreGoods .goodList .goodItem {
+        .container main .tuijian .goodList .goodItem {
           width: 1.5rem;
-          margin-top: .041667rem; }
-          .container main .tuijian .goodList .goodItem a, .container main .forum .goodList .goodItem a, .container main .moreGoods .goodList .goodItem a {
+          margin-top: .041667rem;
+          background: #fff7e9; }
+          .container main .tuijian .goodList .goodItem a {
             display: block; }
-            .container main .tuijian .goodList .goodItem a .goodImg, .container main .forum .goodList .goodItem a .goodImg, .container main .moreGoods .goodList .goodItem a .goodImg {
+            .container main .tuijian .goodList .goodItem a .goodImg {
               width: 100%;
-              height: 1.5rem;
-              background: #fff7e9; }
-              .container main .tuijian .goodList .goodItem a .goodImg img, .container main .forum .goodList .goodItem a .goodImg img, .container main .moreGoods .goodList .goodItem a .goodImg img {
+              height: 1.5rem; }
+              .container main .tuijian .goodList .goodItem a .goodImg img {
                 width: 100%;
                 height: 100%; }
-            .container main .tuijian .goodList .goodItem a .goodText, .container main .forum .goodList .goodItem a .goodText, .container main .moreGoods .goodList .goodItem a .goodText {
+            .container main .tuijian .goodList .goodItem a .goodText {
               padding: .052083rem 0 .052083rem .15625rem; }
-              .container main .tuijian .goodList .goodItem a .goodText p, .container main .forum .goodList .goodItem a .goodText p, .container main .moreGoods .goodList .goodItem a .goodText p {
+              .container main .tuijian .goodList .goodItem a .goodText p {
                 width: 100%;
                 height: .208333rem;
                 font-size: .125rem;
@@ -246,25 +246,15 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis; }
-              .container main .tuijian .goodList .goodItem a .goodText .goodTextPrice, .container main .forum .goodList .goodItem a .goodText .goodTextPrice, .container main .moreGoods .goodList .goodItem a .goodText .goodTextPrice {
+              .container main .tuijian .goodList .goodItem a .goodText .goodTextPrice {
                 color: #ea2727;
                 font-size: .1rem; }
-        .container main .tuijian .goodList .goodItem:nth-child(2n+1), .container main .forum .goodList .goodItem:nth-child(2n+1), .container main .moreGoods .goodList .goodItem:nth-child(2n+1) {
-          margin-right: .041667rem; }
-        .container main .tuijian .goodList .goodItem:nth-child(4n+2) a .goodImg, .container main .forum .goodList .goodItem:nth-child(4n+2) a .goodImg, .container main .moreGoods .goodList .goodItem:nth-child(4n+2) a .goodImg {
+        .container main .tuijian .goodList .goodItem:nth-child(2n) {
           background: #F4F2F7; }
-        .container main .tuijian .goodList .goodItem:nth-child(4n+3) a .goodImg, .container main .forum .goodList .goodItem:nth-child(4n+3) a .goodImg, .container main .moreGoods .goodList .goodItem:nth-child(4n+3) a .goodImg {
+        .container main .tuijian .goodList .goodItem:nth-child(3n) {
           background: #F4F2F7; }
-    .container main .forum .goodList .goodItem a .goodTextForum p, .container main .moreGoods .goodList .goodItem a .goodTextForum p {
-      color: #333;
-      margin: .083333rem 0;
-      font-size: .116667rem;
-      white-space: inherit;
-      overflow: visible;
-      text-align: left;
-      height: .283333rem; }
-    .container main .moreGoods .goodList {
-      text-align: left; }
+        .container main .tuijian .goodList .goodItem:nth-child(4n) {
+          background: #fff7e9; }
   .container footer {
     width: 100%;
     height: .4625rem;

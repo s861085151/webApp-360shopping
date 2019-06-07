@@ -1,0 +1,510 @@
+{
+    "errno": 0,
+    "errmsg": "",
+    "data": {
+        "loop": {
+            "id": "loop",
+            "name": "轮播图",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p1.ssl.qhimg.com/t0181d40737518c4da0.jpg",
+                    "url": "https://mall.360.cn/ac/D6NZDC?utm_source=HB618"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t017fed2119001958ae.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cd236fff759f165ded4a3e8&utm_source=HBg380"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t0125ea1699011b1483.jpg",
+                    "url": "https://mall.360.cn/search/?sort=weight&q=*&cate=572b288c4ae38d3b230c7df8"
+                },
+                {
+                    "pic": "https://p4.ssl.qhimg.com/t01bea9d4585843ab01.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5c6cc89da7d03114b2b46d0c&utm_source=HBc1"
+                },
+                {
+                    "pic": "https://p1.ssl.qhimg.com/t01dd8e48bdadbc3a58.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5b345643215ea051fc7e8d67&utm_source=HBzy"
+                }
+            ]
+        },
+        "kuaisurukou": {
+            "id": "kuaisurukou",
+            "name": "快速入口",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p0.ssl.qhimg.com/t0126f02bbd69253235.png",
+                    "url": "https://mall.360.cn/user/mycoin?utm_source=qiandao",
+                    "desc": "每日签到",
+                    "tag": "快速入口"
+                },
+                {
+                    "pic": "https://p0.ssl.qhimg.com/t01519f5b8f1d3cd018.png",
+                    "url": "https://mall.360.cn/ac/xinpin?utm_source=mallnewp",
+                    "desc": "新品上市",
+                    "tag": "快速入口"
+                },
+                {
+                    "pic": "https://p0.ssl.qhimg.com/t0148352114d2a0b5c5.png",
+                    "url": "https://mall.360.cn/ac/D6NZDC?utm_source=ZZ",
+                    "desc": "618超值购",
+                    "tag": "快速入口"
+                },
+                {
+                    "pic": "https://p0.ssl.qhimg.com/t0109764faebdf29b15.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5c6cc89da7d03114b2b46d0c?utm_source=baokuan",
+                    "desc": "爆款推荐",
+                    "tag": "快速入口"
+                },
+                {
+                    "pic": "https://p0.ssl.qhimg.com/t01d26ce945a77e5dfc.png",
+                    "url": "https://mall.360.cn/coupon/centerpage?utm_source=领券中心",
+                    "desc": "领券中心",
+                    "tag": "快速入口"
+                }
+            ]
+        },
+        "ads": {
+            "id": "ads",
+            "name": "广告",
+            "is_show": "0",
+            "data": []
+        },
+        "tuijian": {
+            "data": [{
+                "id": "tuijian",
+                "name": "推荐",
+                "pic": "https://p1.ssl.qhimg.com/t01c4a9f87eaad5187b.jpg",
+                "url": "https://mall.360.cn/search/?sort=weight&q=*&cate=572b288c4ae38d3b230c7df8",
+                "items": {
+                    "id": "items",
+                    "name": "商品信息",
+                    "data": [{
+                            "item_id": "59cdbfdb0246362dc4b4ffc0",
+                            "title": "360行车记录仪G300 Plus（含16G存储卡）",
+                            "pic": "https://p.ssl.qhimg.com/t01ef30dd7f4e31cfab.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=59cdbfdb0246362dc4b4ffc0",
+                            "img_content": "https://p.ssl.qhimg.com/t01ef30dd7f4e31cfab.png",
+                            "price_sale": 449,
+                            "price_market": 449,
+                            "promotion_tag": "",
+                            "short_desc": "",
+                            "stock": 17,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5bc06a04534b7f6295a9d3d4",
+                            "title": "360儿童手表SE3定制手表小猪佩奇（粉色）",
+                            "pic": "http://p3.qhimg.com/t013a8c6c1d7e11646d.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5bc06a04534b7f6295a9d3d4",
+                            "img_content": "http://p3.qhimg.com/t013a8c6c1d7e11646d.png",
+                            "price_sale": 249,
+                            "price_market": 249,
+                            "promotion_tag": "",
+                            "short_desc": "",
+                            "stock": 68,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5cdb72726792c505cc0fa038",
+                            "title": "mushu木薯自动起泡电动硅胶洗脸仪MS1819-湖蓝",
+                            "pic": "https://p.ssl.qhimg.com/t01bf9239e1c44dae76.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5cdb72726792c505cc0fa038",
+                            "img_content": "https://p.ssl.qhimg.com/t01bf9239e1c44dae76.png",
+                            "price_sale": "219",
+                            "price_market": 249,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 998,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5b0d2fabeac4996903afd291",
+                            "title": "360儿童手表7W 粉色",
+                            "pic": "https://p.ssl.qhimg.com/t0111841a2944553ad8.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5b0d2fabeac4996903afd291",
+                            "img_content": "https://p.ssl.qhimg.com/t0111841a2944553ad8.png",
+                            "price_sale": "449",
+                            "price_market": 599,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 46,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5c6e22263f31c3607b53862a",
+                            "title": "【新品】360家庭防火墙路由器5S",
+                            "pic": "https://p.ssl.qhimg.com/t010f603d3b7bbff5d2.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5c6e22263f31c3607b53862a",
+                            "img_content": "https://p.ssl.qhimg.com/t010f603d3b7bbff5d2.png",
+                            "price_sale": "169",
+                            "price_market": 199,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 81,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5b6abdd2215ea051fc7e8d90",
+                            "title": "360智能摄像机 云台版1080P-标准款",
+                            "pic": "https://p.ssl.qhimg.com/t01c634805353fabeea.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5b6abdd2215ea051fc7e8d90",
+                            "img_content": "https://p.ssl.qhimg.com/t01c634805353fabeea.png",
+                            "price_sale": "139",
+                            "price_market": 149,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 66,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5cb06b353f31c3607b5387f1",
+                            "title": "360行车记录仪全面屏后视镜 M320",
+                            "pic": "https://p.ssl.qhimg.com/t018c67e395ac123968.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5cb06b353f31c3607b5387f1",
+                            "img_content": "https://p.ssl.qhimg.com/t018c67e395ac123968.png",
+                            "price_sale": 399,
+                            "price_market": 399,
+                            "promotion_tag": "",
+                            "short_desc": "",
+                            "stock": 175,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5a3ca466eac4996903afd0b3",
+                            "title": "360扫地机器人S6",
+                            "pic": "https://p.ssl.qhimg.com/t01aea82e2b7d5f5410.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5a3ca466eac4996903afd0b3",
+                            "img_content": "https://p.ssl.qhimg.com/t01aea82e2b7d5f5410.png",
+                            "price_sale": "998",
+                            "price_market": 1699,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 43,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5ce26d396792c505cc0fa124",
+                            "title": "比伯（BIEBER）超萌小挂饰 毛绒玩偶仿真婴儿钥匙扣 羊羊款 杏色",
+                            "pic": "https://p.ssl.qhimg.com/t017da83d0407f1240d.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5ce26d396792c505cc0fa124",
+                            "img_content": "https://p.ssl.qhimg.com/t017da83d0407f1240d.png",
+                            "price_sale": "89",
+                            "price_market": 99,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 998,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5ce25ce93f31c334e2bd6746",
+                            "title": "乐高(LEGO)机械组Technic拼装积木 42071 推土压路机",
+                            "pic": "https://p.ssl.qhimg.com/t0103082b2123014637.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5ce25ce93f31c334e2bd6746",
+                            "img_content": "https://p.ssl.qhimg.com/t0103082b2123014637.png",
+                            "price_sale": "129",
+                            "price_market": 135,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 999,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5cdcfa18f759f165ded4a4c0",
+                            "title": "大嘴猴Paul Frank 手柄真空不锈钢保温杯FPD005（340ML）-粉色",
+                            "pic": "https://p.ssl.qhimg.com/t0101a533caa2fb8e02.png",
+                            "url": "https://mall.360.cn/shop/item?item_id=5cdcfa18f759f165ded4a4c0",
+                            "img_content": "https://p.ssl.qhimg.com/t0101a533caa2fb8e02.png",
+                            "price_sale": "99",
+                            "price_market": 108,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 999,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        },
+                        {
+                            "item_id": "5cda556aa7d03149b3e0de76",
+                            "title": "mushu木薯 电动黑头吸出仪",
+                            "pic": "https://p.ssl.qhimg.com/t019a9f2ac7a8ed0d42.jpg",
+                            "url": "https://mall.360.cn/shop/item?item_id=5cda556aa7d03149b3e0de76",
+                            "img_content": "https://p.ssl.qhimg.com/t019a9f2ac7a8ed0d42.jpg",
+                            "price_sale": "208",
+                            "price_market": 249,
+                            "promotion_tag": "直降",
+                            "short_desc": "",
+                            "stock": 994,
+                            "sold_out": 0,
+                            "list_tag": "",
+                            "tuan_flag": 0,
+                            "forward_url": ""
+                        }
+                    ]
+                }
+            }],
+            "is_show": "1"
+        },
+        "toutiao": {
+            "id": "toutiao",
+            "name": "智能头条",
+            "more_url": "",
+            "is_show": "1",
+            "data": [{
+                    "msg": "618年中大促进行中！点击查看！",
+                    "url": "https://mall.360.cn/ac/D6NZDC?utm_source=KB618",
+                    "tag": "【活动】"
+                },
+                {
+                    "msg": "大牌驾到！Kindle、乐高、V-MODA、大嘴猴、摩飞、LOZ、咚咚…相继入驻360会员商城！",
+                    "url": "https://mall.360.cn/search/?sort=weight&q=*",
+                    "tag": "【资讯】"
+                },
+                {
+                    "msg": "超值优惠，扫地机器人S6！",
+                    "url": "https://mall.360.cn/shop/item?item_id=5a3ca466eac4996903afd0b3&utm_source=SCKB",
+                    "tag": "【特惠】"
+                },
+                {
+                    "msg": "新品上市，360儿童手表M1礼盒装，预购有优惠，点击查看！",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cd91b1da7d03149b3e0de59&utm_source=SCKB",
+                    "tag": "【新品】"
+                }
+            ]
+        },
+        "staritem": {
+            "id": "staritem",
+            "name": "明星单品",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p4.ssl.qhimg.com/t0176dccfe1dc8a37e5.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5c9dc3446792c509c54df1f2",
+                    "tag": ""
+                },
+                {
+                    "pic": "https://p2.ssl.qhimg.com/t01e1526a598b457978.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5b345643215ea051fc7e8d67",
+                    "tag": ""
+                },
+                {
+                    "pic": "https://p1.ssl.qhimg.com/t0162ef4c78c38b5ed3.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cdbc9e83f31c334e2bd66a9",
+                    "tag": ""
+                }
+            ]
+        },
+        "dailybest": {
+            "id": "dailybest",
+            "name": "每日精选",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p1.ssl.qhimg.com/t015592e46e6db9a091.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5c456771a7d03114b2b46c18",
+                    "desc": "AI音箱MAX－M1",
+                    "tag": "AI音箱MAX－M1"
+                },
+                {
+                    "pic": "https://p2.ssl.qhimg.com/t016c194f0e325f3fbd.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5c6e22263f31c3607b53862a",
+                    "desc": "360家庭防火墙5S",
+                    "tag": "360家庭防火墙5S"
+                },
+                {
+                    "pic": "https://p2.ssl.qhimg.com/t0178b08906dab0468d.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5b9b55a5534b7f6295a9d3b8",
+                    "desc": "360可视门铃",
+                    "tag": "360可视门铃"
+                }
+            ]
+        },
+        "bargain": {
+            "id": "bargain",
+            "name": "品牌入驻",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p3.ssl.qhimg.com/t01c44ead5bb4b592ff.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cdceeacf759f165ded4a4bd",
+                    "desc": "D3",
+                    "tag": "大嘴猴保温杯"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t017122f4efd1f59818.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cde5036a7d03149b3e0df10",
+                    "desc": "D3",
+                    "tag": "V-MODA 蓝牙耳机"
+                },
+                {
+                    "pic": "https://p0.ssl.qhimg.com/t01ff71481728fe5f18.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cdbcd526792c505cc0fa04c",
+                    "desc": "D3",
+                    "tag": "Cross Humanity"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t018f17226a82f177b2.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5ce26c46a7d03149b3e0df4f",
+                    "desc": "D3",
+                    "tag": "比伯（BIEBER）萌兔兔"
+                },
+                {
+                    "pic": "https://p2.ssl.qhimg.com/t01732a184945f3e7b2.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cda95c96792c505cc0fa031",
+                    "desc": "D3",
+                    "tag": "Kindle 电子书"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t01b95a05d13126b45b.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cdbdc57a7d03149b3e0dec0",
+                    "desc": "D3",
+                    "tag": "摩飞 榨汁杯"
+                },
+                {
+                    "pic": "https://p3.ssl.qhimg.com/t01f9c8117d1990080a.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cd555a3f759f165ded4a423",
+                    "desc": "D3",
+                    "tag": "Kido儿童智能手表"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t01d639d5d4abf2d541.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cdb79c5f759f165ded4a46e",
+                    "desc": "D3",
+                    "tag": "木薯眼唇按摩仪"
+                },
+                {
+                    "pic": "https://p.ssl.qhimg.com/t01451508e1067ced98.jpg",
+                    "url": "https://mall.360.cn/shop/item?item_id=5ce248563f31c334e2bd6742",
+                    "desc": "D3",
+                    "tag": "jeune premie"
+                }
+            ]
+        },
+        "video": {
+            "id": "video",
+            "name": "视频直播",
+            "is_show": "1",
+            "data": [{
+                "pic": "https://p5.ssl.qhimg.com/t01247117efba9cb53d.jpg",
+                "desc": "360扫地机器人S7",
+                "url": "https://mall.360.cn/shop/item?item_id=5c6551d5f759f13923a57ecc",
+                "video_url": "http://video.mall.360.cn/vod-mall360-100271-beijing/212642533_0_mp4-1559380372-081bdb1f-e770-a26f.mp4",
+                "tag": "视频"
+            }]
+        },
+        "shequ": {
+            "id": "shequ",
+            "name": "社区论坛",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p1.ssl.qhimg.com/t01f47daa2d7826bc3c.jpg",
+                    "url": "https://bbs.360.cn/thread-15735757-1-1.html?utm_source=Hsq1c",
+                    "desc": "【新品】360可视门铃1c开箱篇！"
+                },
+                {
+                    "pic": "https://p5.ssl.qhimg.com/t01dabfaf1eb45475fa.jpg",
+                    "url": "https://bbs.360.cn/thread-15723061-1-1.html?utm_source=Hsq8X",
+                    "desc": "【新品】360儿童手表8X测评！"
+                },
+                {
+                    "pic": "https://p4.ssl.qhimg.com/t01bd57229d47e8c461.jpg",
+                    "url": "https://bbs.360.cn/thread-15738052-1-1.html?utm_source=Hsq5s0527",
+                    "desc": "【体验】防火墙路由真智能路由"
+                },
+                {
+                    "pic": "https://p2.ssl.qhimg.com/t019ee1c63015c48559.jpg",
+                    "url": "https://bbs.360.cn/thread-15727929-1-1.html?utm_source=Hsqyx0527",
+                    "desc": "【体验】360AI音箱MAX用后全体验！"
+                }
+            ]
+        },
+        "gouwuzhinan": {
+            "id": "gouwuzhinan",
+            "name": "购物指南",
+            "is_show": "0",
+            "data": [{
+                "pic": "https://p0.ssl.qhmsg.com/t01bba3c18d84ce04a2.jpg",
+                "url": "https://bbs.360.cn/forum.php?mod=viewthread&tid=15697830",
+                "desc": "360高清智能摄像头红警版开箱评测"
+            }]
+        },
+        "coupons": {
+            "id": "coupons",
+            "name": "活动领券",
+            "is_show": "0",
+            "data": {
+                "pic": "https://p0.ssl.qhimg.com/t010f2dd0b301538769.png",
+                "url": "https://mall.360.cn/coupon/centerpage",
+                "tag": "领券中心"
+            }
+        },
+        "suspend": {
+            "id": "suspend",
+            "name": "悬浮窗",
+            "is_show": "1",
+            "data": {
+                "pic": "https://p1.ssl.qhimg.com/t01cb1475f20b2f4e5b.png",
+                "url": "https://mall.360.cn/ac/D6NZDC?utm_source=XF",
+                "tag": "618"
+            }
+        },
+        "newproduct": {
+            "id": "newproduct",
+            "name": "新品推荐",
+            "is_show": "1",
+            "data": [{
+                    "pic": "https://p0.ssl.qhimg.com/t015ad601f349480254.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cd91a05f759f165ded4a445&utm_source=xptj"
+                },
+                {
+                    "pic": "https://p3.ssl.qhimg.com/t01c82ef7436ed4f70c.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5c6cc89da7d03114b2b46d0c&utm_source=xptj"
+                },
+                {
+                    "pic": "https://p3.ssl.qhimg.com/t01c377876c7ab346e0.png",
+                    "url": "https://mall.360.cn/shop/item?item_id=5cb06b353f31c3607b5387f1&utm_source=xptj"
+                }
+            ]
+        },
+        "logowall": {
+            "id": "logowall",
+            "name": "Logo墙",
+            "is_show": "0",
+            "data": []
+        },
+        "app_rush": {
+            "id": "app_rush",
+            "name": "限时购",
+            "data": null,
+            "is_show": "0"
+        }
+    }
+}
