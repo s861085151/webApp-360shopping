@@ -1,0 +1,130 @@
+.search_header {
+    height: .4375rem;
+    width: 100%;
+    display: flex;
+    padding: .0625rem .041667rem;
+    border-bottom: .010417rem solid #ddd;
+    background: #f7f7f7;
+    font-size: .145833rem;
+    font-size: .145833rem;
+    >span.iconfont {
+        display: block;
+        width: .333333rem;
+        height: .3125rem;
+        text-align: center;
+        line-height: .3125rem;
+        font-weight: 800;
+        margin-right: .041667rem;
+    }
+    .shopSearch {
+        flex: 1;
+        height: .3125rem;
+        border: .010417rem solid #e8e8e8;
+        border-radius: .041667rem;
+        padding: 0 .104167rem;
+    }
+    .searchBtn {
+        margin-left: .041667rem;
+        width: .333333rem;
+        height: .3125rem;
+        border: none;
+        background: #f7f7f7;
+    }
+}
+.shopNav {
+    display: none;
+    flex: 1;
+    background: #f0f0f0;
+    >ul {
+        margin: .135417rem;
+        display: flex;
+        flex-wrap: wrap;
+        .navList {
+            color: #989898;
+            font-size: .15625rem;
+            background: #fff;
+            margin: .052083rem;
+            padding: .03125rem .125rem;
+            border-radius: .166667rem;
+            border: .010417rem solid #dcdcdc;
+        }
+    }
+}
+.searchResult {
+    flex: 1;
+    background: #f0f0f0;
+    .top {
+        height: .4375rem;
+        background: #fff;
+        display: flex;
+        .type {
+            flex: 1;
+            font-size: .145833rem;
+            padding: .008333rem .05rem;
+            border: 0;
+            border-left: .010417rem solid #ebebeb;
+            background: #fff;
+            vertical-align: middle;
+            >span {
+                display: inline-block;
+                width: .145833rem;
+                height: .145833rem;
+                background: url(../images/price.png) no-repeat;
+                vertical-align: middle;
+                background-size: auto .145833rem;
+            }
+            >i {
+                display: inline-block;
+                width: .189583rem;
+                height: .189583rem;
+                background: url(../images/checkbox.png) no-repeat;
+                vertical-align: middle;
+                background-size: auto .189583rem;
+            }
+        }
+        .type:first-of-type {
+            border-left: 0;
+        }
+    }
+    .mainList {
+        padding: .052083rem;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        .itemList {
+            width: 50%;
+            padding: .052083rem;
+            background: #fff;
+            border-top: .052083rem solid #f0f0f0;
+            a {
+                display: block;
+                text-align: center;
+                img {
+                    width: 1.041667rem;
+                    display: block;
+                    margin: .208333rem .172917rem;
+                }
+                .goodName {
+                    display: block;
+                    color: #555;
+                    text-align: left;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .goodPrice {
+                    color: #f55;
+                    display: block;
+                    font-size: .135417rem;
+                }
+            }
+        }
+        .itemList:nth-child(2n+1) {
+            border-right: .025rem solid #f0f0f0;
+        }
+        .itemList:nth-child(2n) {
+            border-left: .025rem solid #f0f0f0;
+        }
+    }
+}

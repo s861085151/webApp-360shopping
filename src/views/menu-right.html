@@ -1,0 +1,12 @@
+<div class="topImg">
+    <img src="{{menuRightData.data.spread[0].pic}}" alt="">
+</div>
+<ul class="prodList">
+    {{each menuRightData.data.secondary}}
+    <li class="goodsList">
+
+        <img src="{{$value.pic}}" alt="" class="goodsPic">
+        <p class="goodsName">{{$value.name}}</p>
+    </li>
+    {{/each}}
+</ul>

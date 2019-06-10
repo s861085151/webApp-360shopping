@@ -1,0 +1,19 @@
+<div class="menu">
+    <div class="menu_header">
+        <span class="iconfont icon-31fanhui1"></span>
+        <span class="classify">分类</span>
+        <i class="iconfont icon-fenxiang"></i>
+    </div>
+    <div class="menuNav">
+        <ul class="sideListNav">
+            {{each menuSideData.data.category}}
+                <li class="sideItem" data-id="{{$value.id}}">{{$value.name}}</li>
+            {{/each}}
+        </ul>
+        <div class="rightBox">
+            <div class="rightItem">
+               
+            </div>
+        </div>
+    </div>
+</div>

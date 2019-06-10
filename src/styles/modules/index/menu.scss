@@ -1,0 +1,105 @@
+.menu {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .menu_header {
+        height: .375rem;
+        line-height: .375rem;
+        width: 100%;
+        display: flex;
+        border-bottom: .010417rem solid #ddd;
+        background: #fff;
+        font-size: .145833rem;
+        >span.iconfont {
+            display: block;
+            width: .333333rem;
+            height: .375rem;
+            text-align: center;
+            margin-right: .041667rem;
+            font-size: .166667rem;
+        }
+        >span.classify {
+            display: block;
+            flex: 1;
+            text-align: center;
+        }
+        >i.iconfont {
+            display: block;
+            width: .333333rem;
+            height: .375rem;
+            text-align: center;
+            font-size: .166667rem;
+            color: rgb(190, 190, 190)
+        }
+    }
+    .menuNav {
+        flex: 1;
+        background: #f2f2f2;
+        overflow: hidden;
+        display: flex;
+        .sideListNav {
+            width: .75rem;
+            height: 100%;
+            background: #fff;
+            .sideItem {
+                width: 100%;
+                height: .333333rem;
+                text-align: center;
+                line-height: .333333rem;
+                color: #333;
+                font-size: .108333rem;
+            }
+            .active {
+                background: #f2f2f2;
+                border-bottom: .008333rem solid rgba(221, 221, 221, 0.5);
+            }
+        }
+        .rightBox {
+            flex: 1;
+            padding: 0 .083333rem;
+            .rightItem {
+                width: 100%;
+                padding-top: .083333rem;
+                .topImg {
+                    width: 100%;
+                    border-radius: 4px;
+                    height: .858333rem;
+                    margin-bottom: .083333rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .prodList {
+                    display: flex;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    padding: .083333rem;
+                    background: #fff;
+                    border-radius: 4px;
+                    .goodsList {
+                        width: 33.3333%;
+                        padding: .041667rem;
+                        text-align: center;
+                        border-bottom: .5px solid #f0f0f0;
+                        border-right: .5px solid #f0f0f0;
+                        .goodsPic {
+                            width: 100%;
+                        }
+                        .goodsName {
+                            font-size: .1rem;
+                            color: #333;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis
+                        }
+                    }
+                    .goodsList:nth-child(3n) {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

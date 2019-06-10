@@ -58,7 +58,22 @@ function server() {
                     pathRewrite: {
                         '^/floatPic': ''
                     }
-                })
+                }),
+                //目录
+                proxy('/menuSide', {
+                    target: 'https://mall.360.cn',
+                    changeOrigin: true, // 访问不同的域名，需要配置成 true
+                    pathRewrite: {
+                        '^/menuSide': ''
+                    }
+                }),
+                proxy('/menuRight', {
+                    target: 'https://mall.360.cn',
+                    changeOrigin: true, // 访问不同的域名，需要配置成 true
+                    pathRewrite: {
+                        '^/menuRight': ''
+                    }
+                }),
             ]
         }))
 }
