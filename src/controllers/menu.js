@@ -45,6 +45,10 @@ const render = async () => {
     let urlID = qs.parse(url, '?', "=")
     $(this).attr('href', `#/details?id=${urlID.item_id}`)
   })
+
+  $('.back').on('click', function () {
+    window.history.go(-1)
+  })
 }
 export default {
   render

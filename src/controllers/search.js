@@ -5,7 +5,9 @@ const render = async () => {
   //分类模板
   const searchData = await ajaxRender.get('/searchApi/search/q?searchautofocus=1&q=&_=1560241378097')
   console.log(searchData)
-  const renderSearchTpl = template.render(searchTpl, {searchData})
+  const renderSearchTpl = template.render(searchTpl, {
+    searchData
+  })
   $('#page .container').html(renderSearchTpl)
 
   // let bScroll = new BScroll('.scroll', {
@@ -13,9 +15,14 @@ const render = async () => {
   //   click: true
   // })
 
-  if($('.mainList').height()) {
-    
+  if ($('.mainList').height()) {
+
   }
+
+  //点击返回上一页
+  $('.back').on('click', function () {
+    window.history.go(-1)
+  })
 }
 
 export default {
