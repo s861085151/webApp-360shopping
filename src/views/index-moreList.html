@@ -2,7 +2,8 @@
 
 {{each moreList.data.list}}
 <li class="goodItem">
-    <a href="http://mall.360.cn/shop/item?item_id={{$value.itemId}}">
+    {{set urlId = $value.itemId}}
+    <a href="#/details?id={{urlId}}" class="detailsGo">
         <div class="goodImg">
             <img src="{{$value.img}}" alt="">
         </div>
@@ -11,5 +12,6 @@
             <p class="goodTextPrice">￥{{$value.price}}</p>
         </div>
     </a>
+    {{/set}}
 </li>
 {{/each}}

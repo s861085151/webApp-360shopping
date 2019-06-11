@@ -35,6 +35,7 @@ function copyIcon() {
 function server() {
     return src('./')
         .pipe(webserver({
+            host: '10.9.65.187',
             port: 8000,
             directoryListing: true,
             livereload: true,
@@ -74,6 +75,22 @@ function server() {
                         '^/menuRight': ''
                     }
                 }),
+                //详情页
+                proxy('/detailsApi', {
+                    target: 'https://mall.360.cn',
+                    changeOrigin: true, // 访问不同的域名，需要配置成 true
+                    pathRewrite: {
+                        '^/detailsApi': ''
+                    }
+                }),
+                //搜索页
+                proxy('/searchApi', {
+                    target: 'https://search.mall.360.cn',
+                    changeOrigin: true, // 访问不同的域名，需要配置成 true
+                    pathRewrite: {
+                        '^/searchApi': ''
+                    }
+                })
             ]
         }))
 }

@@ -19,7 +19,7 @@ export default class Router {
     // 组件挂载根元素
     this.root = $('#main')
     // 导航菜单列表
-    this.navList = $('footer a')
+    this.navList = $('footer a span')
     this.init()
   }
 
@@ -38,7 +38,7 @@ export default class Router {
    * history模式劫持 a链接
    */
   bindLink() {
-    $('nav').on('click', 'a', this.handleLink.bind(this))
+    $('footer').on('click', 'a', this.handleLink.bind(this))
   }
   /**
    * history 处理a链接
@@ -100,9 +100,9 @@ export default class Router {
     this.url = ""
     this.currentURLlist.forEach((item, index) => {
       // 导航菜单激活显示
-      // if (index === 0) {
-      //   this.navActive(item)
-      // }
+      if (index === 0) {
+        this.navActive(item)
+      }
       this.url += "/" + item
       this.controllerName = this.routes[this.url]
       // 404页面处理
@@ -212,6 +212,6 @@ export default class Router {
    * @param  item 当前router对象
    */
   navActive(item) {
-    $('nav a').filter(`[href="#${item}"]`).closest('li').addClass('active').siblings().removeClass('active')
+    $('footer a span').addClass('active').closest('.item').siblings().children().children('span').removeClass('active')
   }
 }

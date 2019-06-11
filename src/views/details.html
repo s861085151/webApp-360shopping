@@ -1,0 +1,57 @@
+<div class="detail">
+    <div class="top">
+        <div class="back iconfont icon-31fanhui1"></div>
+        <div class="my iconfont icon-31wode"></div>
+    </div>
+    <div class="detail-banner swiper-container">
+        <div class="swiper-wrapper">
+            {{each detailsData.data.main_item.img_content}}
+            <div class="swiper-slide">
+                <img src="{{$value}}" alt="">
+            </div>
+            {{/each}}
+        </div>
+        {{each detailsData.data.main_item.img_content}}
+            <div class="swiper-pagination"></div>
+        {{/each}}
+    </div>
+    <div class="goodBox">
+        <h2 class="goodNameBox">
+            <span class="goodName">{{detailsData.data.main_item.title}}</span>
+            <span class="share">
+                <i class="iconfont icon-31fenxiang"></i>
+                分享
+            </span>
+        </h2>
+        <p class="goodPrice">
+            <i class="unit">￥</i>
+            <span class="num">{{detailsData.data.main_item.price_sale}}</span>
+        </p>
+    </div>
+    <div class="selectBox">
+        <div class="label">已选</div>
+        <div class="type">牛仔蓝</div>
+        <div class="iconfont icon-31fanhui1"></div>
+    </div>
+    <div class="infoBox">
+        <div class="navBox">
+            <div class="navItem active">图片详情</div>
+            <div class="navItem">参数规格</div>
+            <div class="navItem">购买咨询</div>
+        </div>
+        <div class="infoContainer">
+            <div class="infoImg"></div>
+        </div>
+    </div>
+</div>
+<div class="detail-footer">
+    <div class="like">
+        <i class="iconfont icon-iconfontxihuan"></i>
+        <p class="text">喜欢</p>
+    </div>
+    <div class="goodCart">
+        <i class="iconfont icon-31gouwuchexuanzhong"></i>
+        <p class="text">购物车</p>
+    </div>
+    <div class="join">加入购物车</div>
+</div>

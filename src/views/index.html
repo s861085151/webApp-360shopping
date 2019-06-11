@@ -16,7 +16,9 @@
                 <div class="swiper-container bannerTap">
                     <div class="swiper-wrapper">
                         {{each indexData.data.loop.data}}
-                        <div class="swiper-slide"><img src="{{$value.pic}}" alt=""></div>
+                        <div class="swiper-slide">
+                            <img src="{{$value.pic}}" alt="">
+                        </div>
                         {{/each}}
                     </div>
                     <div class="swiper-pagination"></div>
@@ -57,7 +59,9 @@
                 </h4>
                 <div class="newPic">
                     {{each indexData.data.newproduct.data}}
-                    <a href="{{$value.url}}"><img src="{{$value.pic}}" alt=""></a>
+                    {{set urlId = $value.url}}
+                    <a href="#/details?id={{urlId}}" class="detailsGo"><img src="{{$value.pic}}" alt=""></a>
+                    {{/set}}
                     {{/each}}
                 </div>
             </div>
@@ -80,17 +84,23 @@
                 </h4>
                 <div class="starShop">
                     <div class="starShop-left">
-                        <a href="{{indexData.data.staritem.data[0].url}}">
+                        {{set urlId = indexData.data.staritem.data[0].url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <img src="{{indexData.data.staritem.data[0].pic}}" alt="">
                         </a>
+                        {{/set}}
                     </div>
                     <div class="starShop-right">
-                        <a href="{{indexData.data.staritem.data[1].url}}">
+                        {{set urlId = indexData.data.staritem.data[1].url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <img src="{{indexData.data.staritem.data[1].pic}}" alt="">
                         </a>
-                        <a href="{{indexData.data.staritem.data[2].url}}">
+                        {{/set}}
+                        {{set urlId = indexData.data.staritem.data[2].url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <img src="{{indexData.data.staritem.data[2].pic}}" alt="">
                         </a>
+                        {{/set}}
                     </div>
                 </div>
             </div>
@@ -102,10 +112,12 @@
                 <div class="itemBox">
                     {{each indexData.data.dailybest.data}}
                     <div class="item-goods">
-                        <a href="{{$value.url}}">
+                        {{set urlId = $value.url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <img src="{{$value.pic}}" alt="">
                             <p>{{$value.tag}}</p>
                         </a>
+                        {{/set}}
                     </div>
                     {{/each}}
                 </div>
@@ -118,10 +130,12 @@
                 <div class="itemBox">
                     {{each indexData.data.bargain.data}}
                     <div class="item-goods">
-                        <a href="{{$value.url}}">
+                        {{set urlId = $value.url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <img src="{{$value.pic}}" alt="">
                             <p>{{$value.tag}}</p>
                         </a>
+                        {{/set}}
                     </div>
                     {{/each}}
                 </div>
@@ -133,7 +147,8 @@
                 <ul class="goodList">
                     {{each indexData.data.tuijian.data[0].items.data}}
                     <li class="goodItem">
-                        <a href="{{$value.url}}">
+                        {{set urlId = $value.url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <div class="goodImg">
                                 <img src="{{$value.pic}}" alt="">
                             </div>
@@ -142,6 +157,7 @@
                                 <p class="goodTextPrice">￥{{$value.price_sale}}</p>
                             </div>
                         </a>
+                        {{/set}}
                     </li>
                     {{/each}}
                 </ul>
@@ -154,7 +170,8 @@
                 <ul class="goodList">
                     {{each indexData.data.shequ.data}}
                     <li class="goodItem">
-                        <a href="{{$value.url}}">
+                        {{set urlId = $value.url}}
+                        <a href="#/details?id={{urlId}}" class="detailsGo">
                             <div class="goodImg">
                                 <img src="{{$value.pic}}" alt="">
                             </div>
@@ -162,6 +179,7 @@
                                 <p class="goodTextName">{{$value.desc}}</p>
                             </div>
                         </a>
+                        {{/set}}
                     </li>
                     {{/each}}
                 </ul>

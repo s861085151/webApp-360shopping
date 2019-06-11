@@ -1,0 +1,132 @@
+.detail {
+  flex: 1;
+  background: #f6f6f7;
+  position: relative;
+  overflow: auto; }
+  .detail .top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: .125rem;
+    display: flex;
+    justify-content: space-between; }
+    .detail .top .back, .detail .top .my {
+      width: .291667rem;
+      height: .291667rem;
+      text-align: center;
+      line-height: .291667rem;
+      font-size: .166667rem;
+      color: #fff;
+      background: #7b7b7b;
+      border-radius: 50%; }
+    .detail .top .my {
+      font-size: .208333rem; }
+  .detail .detail-banner {
+    width: 3.133333rem;
+    height: 3.133333rem;
+    border-bottom: 1px solid #e9e9e9; }
+    .detail .detail-banner img {
+      width: 100%;
+      height: 100%; }
+  .detail .goodBox {
+    padding: .125rem;
+    background: #fff; }
+    .detail .goodBox .goodNameBox {
+      margin-top: .041667rem;
+      overflow: hidden; }
+      .detail .goodBox .goodNameBox .goodName {
+        float: left;
+        width: 2.166667rem; }
+      .detail .goodBox .goodNameBox .share {
+        float: right;
+        width: .466667rem;
+        height: .166667rem;
+        background: #eee;
+        border-radius: .083333rem;
+        line-height: .166667rem;
+        text-align: center;
+        font-size: .1rem;
+        color: #9b9b9b;
+        vertical-align: middle; }
+        .detail .goodBox .goodNameBox .share i {
+          font-size: .125rem;
+          vertical-align: middle; }
+    .detail .goodBox .goodPrice {
+      overflow: hidden;
+      color: #ff5f7c;
+      margin-top: .041667rem;
+      font-size: .15rem; }
+      .detail .goodBox .goodPrice .unit {
+        font-size: .1rem; }
+  .detail .selectBox {
+    padding: 0 .125rem;
+    margin-top: .083333rem;
+    background: #fff;
+    height: .341667rem;
+    line-height: .341667rem;
+    display: flex;
+    font-size: .1rem; }
+    .detail .selectBox .label {
+      width: .375rem;
+      margin-right: .125rem;
+      color: #9b9b9b; }
+    .detail .selectBox .type {
+      flex: 1;
+      color: #151515; }
+    .detail .selectBox .iconfont {
+      transform: rotate(180deg);
+      font-size: .1rem;
+      color: #c5c5c5; }
+  .detail .infoBox {
+    margin-top: .041667rem;
+    background: #fff;
+    width: 100%; }
+    .detail .infoBox .navBox {
+      display: flex;
+      text-align: center;
+      padding: 10px;
+      font-size: .125rem; }
+      .detail .infoBox .navBox .navItem {
+        flex: 1;
+        border-right: 1px solid #e5e5e5; }
+      .detail .infoBox .navBox .navItem:last-child {
+        border: none; }
+      .detail .infoBox .navBox .active {
+        color: #80cb19; }
+    .detail .infoBox .infoContainer .infoImg {
+      padding: .041667rem; }
+      .detail .infoBox .infoContainer .infoImg p {
+        width: 100%; }
+        .detail .infoBox .infoContainer .infoImg p img {
+          width: 100%; }
+
+.detail-footer {
+  height: .5rem;
+  box-shadow: 0 0 3px 0 #f6f6f7;
+  display: flex;
+  align-items: center; }
+  .detail-footer .like, .detail-footer .goodCart {
+    width: .5rem;
+    height: .5rem;
+    text-align: center;
+    color: #525252; }
+    .detail-footer .like i, .detail-footer .goodCart i {
+      line-height: 1;
+      font-size: .208333rem;
+      display: block;
+      margin-top: .083333rem;
+      margin-bottom: .020833rem; }
+    .detail-footer .like p, .detail-footer .goodCart p {
+      font-size: .1rem; }
+  .detail-footer .join {
+    flex: 1;
+    background: #ff1a02;
+    color: #fff;
+    margin: 0 .083333rem;
+    font-size: .135417rem;
+    height: .34375rem;
+    line-height: .34375rem;
+    text-align: center;
+    border-radius: .191667rem; }
